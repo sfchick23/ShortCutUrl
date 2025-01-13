@@ -28,4 +28,25 @@ Welcome to the URL Shortener API! This API allows you to create, retrieve, updat
     "updated": "2024-08-21T12:00:00Z"
   }
 
+- Description: Generates a unique shortened URL for the provided original URL.
+
+### 2. Retrieve Original URL ###
+**GET** `/shorten/<short_code>`
+
+**Request:**
+- **Method:** GET
+- **URL Parameter:** `short_code` (the unique shortened code)
+**Response:**
+- Status Code: 200 OK
+- Body:
+  ```json
+  {
+    "id": 1,
+    "url": "http://example.com",
+    "shortCode": "abc123",
+    "createdAt": "2024-08-21T12:00:00Z",
+    "updated": "2024-08-21T12:00:00Z",
+    "accessCount": 1
+  }
+  
 - Description: Retrieves the original URL associated with the given shortened code and increments the access count.
