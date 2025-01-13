@@ -7,10 +7,18 @@ This project is a URL Shortener service that enables users to create shortened U
 ## Features
 
 - [Shorten URLs](#create-a-shortened-url): Generate a unique, shortened version of any URL.
-- **Retrieve URLs:** Look up the original URL using the shortened code.
-- **Update URLs:** Modify the original URL associated with a shortened code.
-- **Delete URLs:** Remove shortened URLs from the system.
+- [Retrieve URLs](#retrieve-original-url): Look up the original URL using the shortened code.
+- [Update URLs](#update-original-url): Modify the original URL associated with a shortened code.
+- [Delete URLs](#delete-a-shortened-url): Remove shortened URLs from the system.
 - [View Stats](#get-usage-statistics): Track how many times a shortened URL has been accessed.
+
+## Technologies Used
+- **Java 21**
+- **Spring boot(REST, JPA, Transaction)**
+- **Hibernate**
+- **Postgresql**
+- **Maven**
+- **ModelMapper**
 
 ## API Endpoints
 
