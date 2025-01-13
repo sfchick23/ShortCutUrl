@@ -78,3 +78,34 @@ Welcome to the URL Shortener API! This API allows you to create, retrieve, updat
   }
 - Description: Updates the original URL associated with the given shortened code.
 
+
+### Delete a Shortened URL ###
+**DELETE** `/shorten/<short_code>`
+
+**Request:**
+- **Method:** DELETE
+- **URL Parameter:** short_code (the unique shortened code)
+- **Response:**
+  - **Status Code:** 204 No Content
+- Description: Deletes the shortened URL associated with the given shortened code.
+
+
+### Get Usage Statistics ###
+**GET** `/shorten/<short_code>/stats`
+
+**Request:**
+- **Method:** GET
+- **URL Parameter:** `short_code` (the unique shortened code)
+**Response:**
+- **Status Code:** 200 OK
+- **Body:**
+  ```json
+  {
+    "id": 1,
+    "url": "http://example.com",
+    "shortCode": "abc123",
+    "createdAt": "2024-08-21T12:00:00Z",
+    "updated": "2024-08-21T12:00:00Z",
+    "accessCount": 1
+  }
+- Description: Retrieves the usage statistics, including the access count, for the given shortened URL.
