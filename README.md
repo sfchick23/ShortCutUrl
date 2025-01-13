@@ -1,6 +1,16 @@
 # URL Shortener API
 
-Welcome to the URL Shortener API! This API allows you to create, retrieve, update, and delete shortened URLs. Below are the available endpoints and their descriptions.
+This is a solution to the URL shortener project on roadmap.sh : [https://roadmap.sh/projects/url-shortening-service](https://roadmap.sh/projects/url-shortening-service)
+
+This project is a URL Shortener service that enables users to create shortened URLs, retrieve the original URLs using shortened codes, and monitor statistics like access counts. It is developed using Spring Boot and JPA for data persistence, offering RESTful APIs for seamless interaction with the service.
+
+## Features
+
+- [Shorten URLs](#create-a-shortened-url): Generate a unique, shortened version of any URL.
+- **Retrieve URLs:** Look up the original URL using the shortened code.
+- **Update URLs:** Modify the original URL associated with a shortened code.
+- **Delete URLs:** Remove shortened URLs from the system.
+- [View Stats](#get-usage-statistics): Track how many times a shortened URL has been accessed.
 
 ## API Endpoints
 
