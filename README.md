@@ -20,6 +20,32 @@ This project is a URL Shortener service that enables users to create shortened U
 
 ### Steps to Run
 
+  - Clone the repository:
+
+     ```bash
+     git clone https://github.com/sfchick23/ShortCutUrl.git
+     cd ShortCutUrl
+
+  - Build the project using Maven:
+
+     ```bash
+     mvn clean install
+
+  - Database Configuration
+
+     - Change the portNo and dbName
+     - Change the username and password
+   
+    ```properties
+    spring.datasource.driver-class-name=org.postgresql.Driver
+    spring.datasource.url=jdbc:postgresql://localhost:portNo/dbname
+    spring.datasource.username=postgres
+    spring.datasource.password=postgres
+
+  - Run the application:
+    ```bash
+    mvn spring-boot:run
+  
 ## Technologies Used
 - **Java 21**
 - **Spring boot(REST, JPA, Transaction)**
