@@ -104,7 +104,6 @@ This project is a URL Shortener service that enables users to create shortened U
   
 - Description: Retrieves the original URL associated with the given shortened code and increments the access count.
 
-
 ### Update Original URL ###
 **PUT** `/shorten/<short_code>`
 
