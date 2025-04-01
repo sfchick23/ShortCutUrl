@@ -6,7 +6,6 @@ This project is a URL Shortener service that enables users to create shortened U
 
 ## Features
 
-
 - [Shorten URLs](#create-a-shortened-url): Generate a unique, shortened version of any URL.
 - [Retrieve URLs](#retrieve-original-url): Look up the original URL using the shortened code.
 - [Update URLs](#update-original-url): Modify the original URL associated with a shortened code.
